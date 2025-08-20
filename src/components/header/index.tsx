@@ -51,43 +51,29 @@ export default function Header() {
 
           <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex items-center space-x-4 sm:space-x-6 sm:right-8 sm:top-1/2 sm:translate-y-0">
             <div className="hidden sm:flex items-center space-x-6">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={24} className="cursor-pointer text-white hover:text-pink-500" />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF size={24} className="cursor-pointer text-white hover:text-blue-500" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaYoutube size={24} className="cursor-pointer text-white hover:text-red-500" />
               </a>
             </div>
             <div className="flex sm:hidden items-center space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={24} className="cursor-pointer text-white hover:text-pink-500" />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF size={24} className="cursor-pointer text-white hover:text-blue-500" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaYoutube size={24} className="cursor-pointer text-white hover:text-red-500" />
               </a>
             </div>
           </div>
         </div>
-
-        {isSearchActive && (
-          <div className="p-4">
-            <div className="flex items-center space-x-2">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={handleSearchChange}
-                className="bg-transparent text-white focus:outline-none w-full"
-                placeholder="PESQUISAR POR..."
-              />
-            </div>
-          </div>
-        )}
       </header>
 
       <nav className={`bg-black ${showMenu ? "p-4" : "p-0"} relative`}>
