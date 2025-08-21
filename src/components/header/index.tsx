@@ -51,24 +51,24 @@ export default function Header() {
 
           <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex items-center space-x-4 sm:space-x-6 sm:right-8 sm:top-1/2 sm:translate-y-0">
             <div className="hidden sm:flex items-center space-x-6">
-              <a href="/page" target="_blank" rel="noopener noreferrer">
+              <a href="/page2" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={24} className="cursor-pointer text-white hover:text-pink-500" />
               </a>
-              <a href="/page" target="_blank" rel="noopener noreferrer">
+              <a href="/page2" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF size={24} className="cursor-pointer text-white hover:text-blue-500" />
               </a>
-              <a href="/page" target="_blank" rel="noopener noreferrer">
+              <a href="/page2" target="_blank" rel="noopener noreferrer">
                 <FaYoutube size={24} className="cursor-pointer text-white hover:text-red-500" />
               </a>
             </div>
             <div className="flex sm:hidden items-center space-x-4">
-              <a href="/page" target="_blank" rel="noopener noreferrer">
+              <a href="/page2" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={24} className="cursor-pointer text-white hover:text-pink-500" />
               </a>
-              <a href="/page" target="_blank" rel="noopener noreferrer">
+              <a href="/page2" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF size={24} className="cursor-pointer text-white hover:text-blue-500" />
               </a>
-              <a href="/page" target="_blank" rel="noopener noreferrer">
+              <a href="/page2" target="_blank" rel="noopener noreferrer">
                 <FaYoutube size={24} className="cursor-pointer text-white hover:text-red-500" />
               </a>
             </div>

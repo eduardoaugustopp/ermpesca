@@ -1,8 +1,8 @@
+import "./globals.css";
 import HeaderFrases from "@/components/header-frases";
 import Header from "@/components/header";
-
-import "./globals.css";
 import Footer from "@/components/footer";
+import NotFound from "./not-found";
 
 export default function RootLayout({
   children,
