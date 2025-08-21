@@ -20,7 +20,7 @@ const Rodape: React.FC = () => {
                 <ul className="mt-4">
                   <li>
                     <a
-                      href="/page2"
+                      href=""
                       className="text-sm hover:text-gray-600"
                     >
                       Sobre Nós
@@ -28,7 +28,7 @@ const Rodape: React.FC = () => {
                   </li>
                   <li>
                     <a
-                      href="/page2"
+                      href=""
                       className="text-sm hover:text-gray-600"
                     >
                       Destinos
@@ -36,7 +36,7 @@ const Rodape: React.FC = () => {
                   </li>
                   <li>
                     <a
-                      href="/page2"
+                      href=""
                       className="text-sm hover:text-gray-600"
                     >
                       Blog
