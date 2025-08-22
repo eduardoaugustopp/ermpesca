@@ -33,56 +33,49 @@ export default function Header() {
 
   return (
     <div>
-      <header className="bg-black text-white shadow-md">
-        <div className="container mx-auto p-4 relative flex items-center">
-          <div className="lg:hidden absolute left-4">
+      <header className="bg-white text-black shadow-md">
+        <div className="container mx-auto p-4 flex items-center justify-between relative">
+          {/* Menu hambúrguer (mobile) */}
+          <div className="lg:hidden">
             <button
               onClick={() => setShowMenu(!showMenu)}
-              className="text-white text-lg focus:outline-none"
+              className="text-black text-lg focus:outline-none"
             >
               ☰
             </button>
           </div>
-          <img
-            src="/imagens/header/logo.png"
-            alt="Logo"
-            className="h-16 mx-auto block sm:w-auto"
-          />
 
-          <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex items-center space-x-4 sm:space-x-6 sm:right-8 sm:top-1/2 sm:translate-y-0">
-            <div className="hidden sm:flex items-center space-x-6">
-              <a href="">
-                <FaInstagram size={24} className="cursor-pointer text-white hover:text-pink-500" />
-              </a>
-              <a href="">
-                <FaFacebookF size={24} className="cursor-pointer text-white hover:text-blue-500" />
-              </a>
-              <a href="">
-                <FaYoutube size={24} className="cursor-pointer text-white hover:text-red-500" />
-              </a>
-            </div>
-            <div className="flex sm:hidden items-center space-x-4">
-              <a href="">
-                <FaInstagram size={24} className="cursor-pointer text-white hover:text-pink-500" />
-              </a>
-              <a href="">
-                <FaFacebookF size={24} className="cursor-pointer text-white hover:text-blue-500" />
-              </a>
-              <a href="">
-                <FaYoutube size={24} className="cursor-pointer text-white hover:text-red-500" />
-              </a>
-            </div>
+          {/* Logo responsivo */}
+          <div className="flex-1 text-center lg:text-left">
+            <img
+              src="/imagens/header/logo.png"
+              alt="Logo"
+              className="h-12 sm:h-14 md:h-16 inline-block"
+            />
+          </div>
+
+          {/* Ícones sociais */}
+          <div className="flex items-center space-x-4 sm:space-x-6">
+            <a href="">
+              <FaInstagram size={24} className="cursor-pointer text-black hover:text-pink-500" />
+            </a>
+            <a href="">
+              <FaFacebookF size={24} className="cursor-pointer text-black hover:text-blue-500" />
+            </a>
+            <a href="">
+              <FaYoutube size={24} className="cursor-pointer text-black hover:text-red-500" />
+            </a>
           </div>
         </div>
       </header>
 
-      <nav className={`bg-black ${showMenu ? "p-4" : "p-0"} relative`}>
+      <nav className={`bg-white ${showMenu ? "p-4" : "p-0"} relative`}>
         <ul className="hidden lg:flex justify-center gap-6">
           {categories.map((category, index) => (
             <li key={index}>
               <a
                 href={category.link}
-                className="text-white text-sm transition-colors duration-300 ease-in-out hover:text-gray-600"
+                className="text-black text-sm transition-colors duration-300 ease-in-out hover:text-blue-300"
               >
                 {category.name}
               </a>
@@ -90,8 +83,9 @@ export default function Header() {
           ))}
         </ul>
 
+        {/* Menu mobile */}
         <div
-          className={`fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-50 transition-all duration-300 ${
+          className={`fixed inset-0 bg-white text-black flex flex-col items-center justify-center z-50 transition-all duration-300 ${
             showMenu ? "block" : "hidden"
           }`}
         >
@@ -106,7 +100,7 @@ export default function Header() {
               <li key={index}>
                 <a
                   href={category.link}
-                  className="text-xl hover:text-gray-300 transition-colors duration-300"
+                  className="text-xl hover:text-blue-300 transition-colors duration-300"
                   onClick={() => setShowMenu(false)}
                 >
                   {category.name}

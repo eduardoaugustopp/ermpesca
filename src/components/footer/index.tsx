@@ -15,7 +15,7 @@ const Rodape: React.FC = () => {
             <section>
               <div>
                 <h2 className="text-lg font-semibold flex items-center gap-2">
-                  <FaFish className="text-lg mr-2" /> ENTRE RIOS PESCA
+                  <FaFish className="text-lg mr-2" /> ENTRE RIOS E MARES PESCA
                 </h2>
                 <ul className="mt-4">
                   <li>
@@ -64,7 +64,7 @@ const Rodape: React.FC = () => {
                 </li>
                 <li>
                   <a className="relative group text-sm hover:text-gray-600">
-                    E-mail: entre.rios.pesca@hotmail.com
+                    E-mail: contato.ermpesca@gmail.com
                     <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 transform scale-x-100 origin-left transition-transform duration-300 group-hover:scale-x-0"></span>
                   </a>
                 </li>
@@ -88,7 +88,7 @@ const Rodape: React.FC = () => {
                     >
                       <FaInstagram className="text-lg mr-2" />
                       <span className="group-hover:text-gray-600">
-                        @entre.rios.pesca
+                        @riosemarespesca
                       </span>
                       <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 transform scale-x-100 origin-left transition-transform duration-300 group-hover:scale-x-0"></span>
                     </a>
@@ -101,7 +101,7 @@ const Rodape: React.FC = () => {
                     >
                       <FiFacebook className="text-lg mr-2" />
                       <span className="group-hover:text-gray-600">
-                        Entre Rios Pesca Oficial
+                        ERM Pesca Oficial
                       </span>
                       <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 transform scale-x-100 origin-left transition-transform duration-300 group-hover:scale-x-0"></span>
                     </a>
@@ -114,7 +114,7 @@ const Rodape: React.FC = () => {
                     >
                       <FiYoutube className="text-lg mr-2" />
                       <span className="group-hover:text-gray-600">
-                        Entre Rios Pesca TV
+                        ERM Pesca TV
                       </span>
                       <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 transform scale-x-100 origin-left transition-transform duration-300 group-hover:scale-x-0"></span>
                     </a>
@@ -125,7 +125,7 @@ const Rodape: React.FC = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-sm">
-          <p>&copy; 2025 - Entre Rios Pesca - Registro - SP</p>
+          <p>&copy; 2025 - Entre Rios e Mares Pesca - Registro - SP</p>
         </div>
       </footer>
     </>

@@ -6,6 +6,9 @@ const HeaderFrases: React.FC = () => {
   const phrases = [
     'DESTINOS ÁGUA DOCE',
     'DESTINOS ÁGUA SALGADA',
+    'RIOS',
+    'ESTUÁRIOS',
+    'MAR ABERTO',
   ];
 
   const [currentPhrase, setCurrentPhrase] = useState<string>(phrases[0]);
