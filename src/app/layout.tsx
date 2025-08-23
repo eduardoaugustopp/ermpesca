@@ -1,4 +1,5 @@
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
 import HeaderFrases from "@/components/header-frases";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
