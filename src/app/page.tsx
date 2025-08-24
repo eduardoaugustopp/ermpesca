@@ -1,6 +1,7 @@
 'use client'
 
 import Destinos from "@/components/destinos";
+import Feedback from "@/components/feedback-dos-clientes";
 import HomeImage from "@/components/home-image";
 import Banner from "@/components/home-image-banner";
 import MapaDestinos from "@/components/mapa-destino";
@@ -10,9 +11,10 @@ export default function Home() {
     <>
       <Banner />
       <Destinos tipo="aguaSalgada" titulo="DESTINOS EM ÁGUA SALGADA" />
-      <Destinos tipo="aguaDoce" titulo="DESTINOS EM ÁGUA DOCE" />
+      <Destinos tipo="aguaDoce" titulo="DESTINO EM ÁGUA DOCE" />
       <HomeImage />
       <MapaDestinos />
+      <Feedback />
     </>
   );
 }

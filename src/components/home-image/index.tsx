@@ -9,7 +9,7 @@ const HomeImage = () => {
         className="w-full h-auto max-h-[90vh] object-contain mt-8 mb-4 md:mb-0 md:w-[60vw] md:h-auto"
       />
       <div className="p-5 text-center md:text-left md:p-4 md:w-[40vw]">
-        <h1 className="text-black text-2xl font-bold mb-6">
+        <h1 className="text-black text-xl font-bold mb-6">
           LUGARES ESPECIAIS
         </h1>
         <p className="text-black text-sm mb-2">

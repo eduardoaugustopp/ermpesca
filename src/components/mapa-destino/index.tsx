@@ -10,7 +10,7 @@ const MapaLeaflet = dynamic(() => import("./MapaLeaflet"), {
 const MapaDestinos: React.FC = () => {
   return (
     <div className="flex flex-col items-center my-10">
-      <h2 className="text-2xl font-bold mb-6 text-black">MAIS VISITADOS</h2>
+      <h2 className="text-xl font-bold mb-6 text-black">MAIS VISITADOS</h2>
       <div className="w-full max-w-[600px] h-[400px] rounded-lg overflow-hidden shadow-lg">
         <MapaLeaflet />
       </div>
