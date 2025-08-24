@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 
 const feedbacks = [
@@ -35,7 +35,7 @@ const Feedback = () => {
   const [visibleFeedbacks, setVisibleFeedbacks] = useState(feedbacks.slice(0, 3));
   const [startIndex, setStartIndex] = useState(0);
 
-  const rotateFeedbacks = () => {
+  const rotateFeedbacks = useCallback(() => {
     const nextIndex = (startIndex + 1) % feedbacks.length;
     const newFeedbacks = feedbacks.slice(nextIndex, nextIndex + 3);
     if (newFeedbacks.length < 3) {
@@ -43,14 +43,14 @@ const Feedback = () => {
     }
     setVisibleFeedbacks(newFeedbacks);
     setStartIndex(nextIndex);
-  };
+  }, [startIndex]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       rotateFeedbacks();
     }, 4000);
     return () => clearInterval(interval);
-  }, [startIndex]);
+  }, [rotateFeedbacks]);
 
   return (
     <div className="bg-white text-gray-900 px-8 pt-2 pb-8 text-center">
@@ -64,7 +64,7 @@ const Feedback = () => {
           >
             <div>
               <p className="text-lg font-semibold mb-1">{feedback.nome}</p>
-              <p className="text-sm italic">"{feedback.comentario}"</p>
+              <p className="text-sm italic">&quot;{feedback.comentario}&quot;</p>
             </div>
             <div className="flex justify-center text-yellow-500 mt-2">
               {[...Array(feedback.estrelas)].map((_, i) => (
