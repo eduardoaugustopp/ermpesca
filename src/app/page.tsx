@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Banner />
       <Destinos tipo="aguaSalgada" titulo="DESTINOS EM ÁGUA SALGADA" />
-      <Destinos tipo="aguaDoce" titulo="DESTINO EM ÁGUA DOCE" />
+      <Destinos tipo="aguaDoce" titulo="DESTINOS EM ÁGUA DOCE" />
       <HomeImage />
       <MapaDestinos />
       <Feedback />
