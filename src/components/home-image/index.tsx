@@ -6,21 +6,23 @@ const HomeImage = () => {
       <img
         src="/imagens/home-image/barco.png"
         alt="Imagem ilustrativa"
-        className="w-full h-auto max-h-[90vh] object-contain mb-4 md:mb-0 md:w-[60vw] md:h-auto"
+        className="w-full h-auto max-h-[90vh] object-contain mt-8 mb-4 md:mb-0 md:w-[60vw] md:h-auto"
       />
-      <div className="p-5 text-sm text-center md:text-left md:p-4 md:w-[40vw]">
-        <h1 className="text-black text-xl font-light mb-6">LUGARES ESPECIAIS</h1>
-        <p className="text-base md:text-base mb-2">
-          Levamos você para pescar em lugares escolhidos, em rios e no mar.
+      <div className="p-5 text-center md:text-left md:p-4 md:w-[40vw]">
+        <h1 className="text-black text-2xl font-bold mb-6">
+          LUGARES ESPECIAIS
+        </h1>
+        <p className="text-black text-sm mb-2">
+          Levamos você para pescar em lugares bonitos, no rio e no mar.
         </p>
-        <p className="text-base md:text-base mb-2">
-          Queremos que você viva momentos de verdade, com aventura, calma e contato com os costumes da região.
+        <p className="text-black text-sm mb-2">
+          Queremos que você aproveite cada momento, com aventura, descanso e contato com a natureza.
         </p>
-        <p className="text-base md:text-base mb-2">
-          Cuidamos de tudo na sua viagem, do começo ao fim.
+        <p className="text-black text-sm mb-2">
+          A gente cuida de tudo: transporte, hospedagem e guia.
         </p>
-        <p className="text-base md:text-base">
-          Trabalhamos com pessoas de confiança e moradores locais, para garantir segurança, conforto e uma experiência única.
+        <p className="text-black text-sm">
+          Trabalhamos com pessoas locais e de confiança, para que sua viagem seja segura e tranquila.
         </p>
       </div>
     </div>
