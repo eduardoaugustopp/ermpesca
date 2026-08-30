@@ -126,6 +126,18 @@ const Rodape: React.FC = () => {
         </div>
         <div className="mt-8 text-center text-sm">
           <p>&copy; 2025 - Entre Rios e Mares Pesca - Registro - SP</p>
+          <p>
+            Desenvolvido por{" "}
+            <a
+              href="https://github.com/eduardoaugustopp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group font-semibold"
+            >
+              Eduardo Augusto Paiva Pinto
+              <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 transform scale-x-100 origin-left transition-transform duration-300 group-hover:scale-x-0"></span>
+            </a>
+          </p>
         </div>
       </footer>
     </>
